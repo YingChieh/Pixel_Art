@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const Grid =()=>{
-    const [cells]=useState(Array.from({length:64}));
+const Grid =({cells})=>{
     return(
         <div className="grid">
-            {cells.map(() => <div className="cell"></div>)}
+            {cells.map((_, i) => <div key={i} className="cell"></div>)}
         </div>
     )
 };

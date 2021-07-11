@@ -3,13 +3,12 @@ import Grid from "./components/Grid";
 import ColorPicker from "./components/ColorPicker";
 
 function App() {
-  const [currentColor, setCurrentColor] = useState("#FF0000");
-  const [cells]=useState(Array.from({length:64}));
+  const [currentColor, setCurrentColor] = useState("#ff0000");
 
   return (
     <div className="app">
       <ColorPicker currentColor={currentColor} setCurrentColor={setCurrentColor} />
-      <Grid cells={cells} />      
+      <Grid currentColor={currentColor} />      
     </div>
   );
 }

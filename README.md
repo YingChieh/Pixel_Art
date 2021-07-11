@@ -15,8 +15,8 @@ Goals
     - [x] 12x12
     - [x] 16x16
     - [x] 32x32
-- [x] 4. Download option (JPG / PNG / GIF) (OK)
-- [ ] 5. Paint bucket / fill tool (NOK)
+- [x] 4. Download option (JPG / PNG / GIF)
+- [ ] 5. Paint bucket / fill tool
     - [ ] Fills in neighboring pixels whose color value matches the pixels you click
 
 Resource

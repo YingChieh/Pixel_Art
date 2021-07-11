@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import Grid from "./components/Grid";
 import ColorPicker from "./components/ColorPicker";
+import {pure} from "recompose";
 
-const initialCells =Array.from({length:64}, () => ({
+const cellAmont = [64,144,256,1024];
+const initialCells = Array.from({length:cellAmont[0]}, () => ({
     color: '#ffffff',
 }));
 
@@ -22,8 +24,8 @@ function App() {
         <button className="addList" onClick={() => onSetColor(currentColor)}>Add to List</button>
       </div>
       <div className="colorListContainer">
-        {colorHistory.map((color) => (
-          <div key={color} className="colorList" onClick={() => setCurrentColor(color)} style={{ background:color }}></div>
+        {colorHistory.map((color,i) => (
+          <div key={i} className="colorList" onClick={() => setCurrentColor(color)} style={{ background:color }}></div>
           ))}
       </div>
       
@@ -32,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default pure(App);

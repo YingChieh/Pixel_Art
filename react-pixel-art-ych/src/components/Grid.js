@@ -1,11 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const initialCells =Array.from({length:64}, () => ({
-    color: '#ffffff',
-}));
-
-const Grid =({currentColor})=>{
-    const [cells, setCells] = useState(initialCells);
+const Grid =({currentColor, cells, setCells})=>{
     const updateCell = (i) => () => {
         setCells(cells.map((cell, cellIndex) => {
             if(cellIndex === i){

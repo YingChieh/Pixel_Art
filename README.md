@@ -1,5 +1,9 @@
 # Building a Pixal Art with React
 
+Live Demo
+-------------
+https://yingchieh.github.io/Pixel_Art/
+
 Goals
 -------------
 - [x] 1. Basic grid 8x8 rendering 

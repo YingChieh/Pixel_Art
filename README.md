@@ -1,5 +1,7 @@
 # Building a Pixal Art with React
 
+![Grid](https://user-images.githubusercontent.com/16781739/125208836-2beeb200-e295-11eb-9c56-3da0dad85ebf.PNG)
+
 Live Demo
 -------------
 https://yingchieh.github.io/Pixel_Art/

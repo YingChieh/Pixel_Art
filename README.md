@@ -1,5 +1,11 @@
 # Building a Pixal Art with React
 
+![Grid](https://user-images.githubusercontent.com/16781739/125208836-2beeb200-e295-11eb-9c56-3da0dad85ebf.PNG)
+
+Live Demo
+-------------
+https://yingchieh.github.io/Pixel_Art/
+
 Goals
 -------------
 - [x] 1. Basic grid 8x8 rendering 
@@ -9,8 +15,8 @@ Goals
     - [x] 12x12
     - [x] 16x16
     - [x] 32x32
-- [x] 4. Download option (JPG / PNG / GIF) (OK)
-- [ ] 5. Paint bucket / fill tool (NOK)
+- [x] 4. Download option (JPG / PNG / GIF)
+- [ ] 5. Paint bucket / fill tool
     - [ ] Fills in neighboring pixels whose color value matches the pixels you click
 
 Resource

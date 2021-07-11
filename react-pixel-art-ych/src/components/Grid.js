@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Grid =({currentColor, cells, setCells})=>{
+const Grid =({currentColor, cells, setCells, initGrid})=>{
     const updateCell = (i) => () => {
         setCells(cells.map((cell, cellIndex) => {
             if(cellIndex === i){
@@ -11,7 +11,7 @@ const Grid =({currentColor, cells, setCells})=>{
         }))
     };
     return(
-        <div className="grid">
+        <div className={"grid " + initGrid}>
             {cells.map((cell, i) => (
                 <div key={i} style={{background: cell.color}} className="cell" onClick={updateCell(i)}></div>
             ))}

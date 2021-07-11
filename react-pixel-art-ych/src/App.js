@@ -5,12 +5,13 @@ import {pure} from "recompose";
 import html2canvas from "html2canvas";
 
 
-const cellAmont = [64,144,256,1024];
-const initialCells = Array.from({length:cellAmont[0]}, () => ({
+const cellAmontList = [64,144,256,1024];
+let  initialCells = Array.from({length:cellAmontList[0]}, () => ({
     color: '#ffffff',
 }));
 
 function App() {
+  const [initGrid, setGrid] = useState("grid-8");
   const [cells, setCells] = useState(initialCells);
   const [currentColor, setCurrentColor] = useState("#ff0000");
   const [colorHistory, setColorHistory] = useState([]);
@@ -18,6 +19,18 @@ function App() {
   const onSetColor = (color) => {
     setColorHistory(colorHistory.slice(-7).concat(color));
   };
+
+  const onSetGrid = (i, value) =>{
+    setGrid(value);
+    setCellAmount(i);
+    setCells(initialCells);
+  }
+
+  const setCellAmount = (i) =>{
+    initialCells=Array.from({length:cellAmontList[i]}, () => ({
+    color: '#ffffff',
+}));
+  }
   
   const capture = (imageType) => {
     var data = document.getElementsByClassName('grid')[0];
@@ -52,6 +65,12 @@ function App() {
 
   return (
     <div className="app">
+      <div>
+        <button className="btnGrid" onClick={() => onSetGrid(0, "grid-8")}>8 X 8</button>
+        <button className="btnGrid" onClick={() => onSetGrid(1, "grid-12")}>12 X 12</button>
+        <button className="btnGrid" onClick={() => onSetGrid(2, "grid-16")}>16 X 16</button>
+        <button className="btnGrid" onClick={() => onSetGrid(3, "grid-32")}>32 X 32</button>
+      </div>
       <div className="pickerContainer">
         <ColorPicker currentColor={currentColor} setCurrentColor={setCurrentColor} />
         <button className="addList" onClick={() => onSetColor(currentColor)}>Add to List</button>
@@ -62,14 +81,13 @@ function App() {
           ))}
       </div>
       <div className="gridWrap">
-        <Grid currentColor={currentColor} cells={cells} setCells={setCells} />
+        <Grid currentColor={currentColor} cells={cells} setCells={setCells} initGrid={initGrid} />
         <div className="downloadContainer">
           <button className="button1" onClick={() => capture('jpg')}>Download as JPG</button>
           <button className="button2" onClick={() => capture('png')}>Download as PNG</button>
           <button className="button3" onClick={() => capture('gif')}>Download as GIF</button>
         </div>
-      </div>
-         
+      </div>         
     </div>
   );
 }

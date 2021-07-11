@@ -137,7 +137,7 @@ button:hover {
 
 @media screen and (max-width: 800px) {
   #root, .app, .pickerContainer, .gridWrap, .grid {
-    width: 95%; /* The width is 100%, when the viewport is 800px or smaller */
+    width: 93%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 
   #root .grid {

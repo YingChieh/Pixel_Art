@@ -65,7 +65,7 @@ function App() {
 
   return (
     <div className="app">
-      <div>
+      <div className="container">
         <button className="btnGrid" onClick={() => onSetGrid(0, "grid-8")}>8 X 8</button>
         <button className="btnGrid" onClick={() => onSetGrid(1, "grid-12")}>12 X 12</button>
         <button className="btnGrid" onClick={() => onSetGrid(2, "grid-16")}>16 X 16</button>
@@ -81,8 +81,10 @@ function App() {
           ))}
       </div>
       <div className="gridWrap">
-        <Grid currentColor={currentColor} cells={cells} setCells={setCells} initGrid={initGrid} />
-        <div className="downloadContainer">
+        <div className="container">
+          <Grid currentColor={currentColor} cells={cells} setCells={setCells} initGrid={initGrid} />
+        </div>
+        <div className="container">
           <button className="button1" onClick={() => capture('jpg')}>Download as JPG</button>
           <button className="button2" onClick={() => capture('png')}>Download as PNG</button>
           <button className="button3" onClick={() => capture('gif')}>Download as GIF</button>

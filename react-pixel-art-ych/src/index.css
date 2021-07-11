@@ -8,9 +8,11 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
+  text-align: center;
 }
 
 #root{
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -19,15 +21,15 @@ button {
     border: none;
     color: #000000;
     border: 0.16em solid #555555;
-    padding:0.3em 1.2em;
+    padding:0.3em 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-weight:300;
     margin:0 0.1em 0.1em 0;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
     border-radius:1em;
     box-sizing: border-box;
     cursor: pointer;
@@ -71,8 +73,13 @@ button:hover {
     color: #fffddd;
 }
 
+.container{
+  width: 100%;
+  text-align:center;
+}
+
 #root .app{
-  margin: 1rem;
+  margin: 1em auto;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -82,7 +89,6 @@ button:hover {
 }
 #root .pickerContainer{
   margin: 1rem;
-  padding-left:8em;
 }
 
 #root .colorPicker{
@@ -103,7 +109,7 @@ button:hover {
 
 #root .colorListContainer{
   display: flex;
-  width: 30em;
+  margin: 0 auto;
   height: 3.5em;
 }
 
@@ -118,16 +124,35 @@ button:hover {
 }
 
 #root .gridWrap{
-  max-height: 70vh;
-  overflow: auto;
+  max-height: 75vh;
 }
 
 #root .grid{
-  margin: 1em;
+  margin: 5px auto;
   display: grid;
   width: 30em;
   height: 30em;
   outline: solid black 2px;
+}
+
+@media screen and (max-width: 800px) {
+  #root, .app, .pickerContainer, .gridWrap, .grid {
+    width: 95%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  #root .grid {
+    width: 20em;
+    height: 20em;
+  }
+
+  #root .colorList {
+    width: 2em;
+    height: 2em;
+  }
+
+  button{
+    width: 100%;
+  }
 }
 
 #root .grid-8{

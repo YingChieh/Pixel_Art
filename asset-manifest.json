@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Pixel_Art/static/css/main.b36e8907.chunk.css",
+    "main.js": "/Pixel_Art/static/js/main.506359da.chunk.js",
+    "main.js.map": "/Pixel_Art/static/js/main.506359da.chunk.js.map",
+    "runtime-main.js": "/Pixel_Art/static/js/runtime-main.c3c9a831.js",
+    "runtime-main.js.map": "/Pixel_Art/static/js/runtime-main.c3c9a831.js.map",
+    "static/js/2.9644c2a8.chunk.js": "/Pixel_Art/static/js/2.9644c2a8.chunk.js",
+    "static/js/2.9644c2a8.chunk.js.map": "/Pixel_Art/static/js/2.9644c2a8.chunk.js.map",
+    "index.html": "/Pixel_Art/index.html",
+    "static/css/main.b36e8907.chunk.css.map": "/Pixel_Art/static/css/main.b36e8907.chunk.css.map",
+    "static/js/2.9644c2a8.chunk.js.LICENSE.txt": "/Pixel_Art/static/js/2.9644c2a8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3c9a831.js",
+    "static/js/2.9644c2a8.chunk.js",
+    "static/css/main.b36e8907.chunk.css",
+    "static/js/main.506359da.chunk.js"
+  ]
+}

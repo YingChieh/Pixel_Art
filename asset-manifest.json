@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Pixel_Art/static/css/main.576461ff.chunk.css",
-    "main.js": "/Pixel_Art/static/js/main.013e88c5.chunk.js",
-    "main.js.map": "/Pixel_Art/static/js/main.013e88c5.chunk.js.map",
+    "main.css": "/Pixel_Art/static/css/main.35420b94.chunk.css",
+    "main.js": "/Pixel_Art/static/js/main.540ad887.chunk.js",
+    "main.js.map": "/Pixel_Art/static/js/main.540ad887.chunk.js.map",
     "runtime-main.js": "/Pixel_Art/static/js/runtime-main.c3c9a831.js",
     "runtime-main.js.map": "/Pixel_Art/static/js/runtime-main.c3c9a831.js.map",
     "static/js/2.9644c2a8.chunk.js": "/Pixel_Art/static/js/2.9644c2a8.chunk.js",
     "static/js/2.9644c2a8.chunk.js.map": "/Pixel_Art/static/js/2.9644c2a8.chunk.js.map",
     "index.html": "/Pixel_Art/index.html",
-    "static/css/main.576461ff.chunk.css.map": "/Pixel_Art/static/css/main.576461ff.chunk.css.map",
+    "static/css/main.35420b94.chunk.css.map": "/Pixel_Art/static/css/main.35420b94.chunk.css.map",
     "static/js/2.9644c2a8.chunk.js.LICENSE.txt": "/Pixel_Art/static/js/2.9644c2a8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c3c9a831.js",
     "static/js/2.9644c2a8.chunk.js",
-    "static/css/main.576461ff.chunk.css",
-    "static/js/main.013e88c5.chunk.js"
+    "static/css/main.35420b94.chunk.css",
+    "static/js/main.540ad887.chunk.js"
   ]
 }

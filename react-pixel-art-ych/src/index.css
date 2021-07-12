@@ -74,12 +74,13 @@ button:hover {
 }
 
 .container{
+  margin: 1em auto;
   width: 100%;
   text-align:center;
 }
 
 #root .app{
-  margin: 1em auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -116,22 +117,18 @@ button:hover {
 #root .colorList{
   margin: 0 0 0 3px;
   padding: 0;
-  width: 3.5em;
-  height: 3.5em;
+  width: 3vw;
+  height: 3vw;
   outline: solid black 1px;
   border: none;
   cursor: pointer;
 }
 
-#root .gridWrap{
-  max-height: 75vh;
-}
-
 #root .grid{
-  margin: 5px auto;
+  margin: 0 auto;
   display: grid;
-  width: 30em;
-  height: 30em;
+  width: 25vw;
+  height: 25vw;
   outline: solid black 2px;
 }
 
@@ -140,10 +137,6 @@ button:hover {
     width: 93%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 
-  #root .grid {
-    width: 20em;
-    height: 20em;
-  }
 
   #root .colorList {
     width: 2em;

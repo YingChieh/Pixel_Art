@@ -80,16 +80,12 @@ function App() {
           <div key={i} className="colorList" onClick={() => setCurrentColor(color)} style={{ background:color }}></div>
           ))}
       </div>
-      <div className="gridWrap">
-        <div className="container">
           <Grid currentColor={currentColor} cells={cells} setCells={setCells} initGrid={initGrid} />
-        </div>
         <div className="container">
           <button className="button1" onClick={() => capture('jpg')}>Download as JPG</button>
           <button className="button2" onClick={() => capture('png')}>Download as PNG</button>
           <button className="button3" onClick={() => capture('gif')}>Download as GIF</button>
         </div>
-      </div>         
     </div>
   );
 }
